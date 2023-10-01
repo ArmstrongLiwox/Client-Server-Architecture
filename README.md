@@ -101,3 +101,5 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 mysql -u leke -p -h 52.56.36.200
 ```
+
+![client to server error](<images/client to server error.png>)
