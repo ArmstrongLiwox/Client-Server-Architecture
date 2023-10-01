@@ -63,13 +63,41 @@ Server B name - `mysql client`
 
 2. Install Mysql Server software on mysql server Linux server
 
+```
+sudo apt update
+```
+```
+sudo apt install mysql-server
+```
+![install server](<images/install mysql server.png>)
+
+
 3. Install Mysql Client software on mysql client Linux server
 
+```
+sudo apt update
+```
+```
+sudo apt install mysql-client
+```
+![install client](<images/install mysql client.png>)
 
+4. Add mysql client private ip to mysql server inbound rule to grant client access to server.
 
+![add client ip](<images/add client ip.png>)
 
+5. Configure MySQL server to allow connections from remote host
 
+```
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf 
+```
 
+> Replace bind-address = 127.0.0.1 with 0.0.0.0
 
+![replace bind address](<images/replace bind address.png>)
 
+6. From mysql client connect to mysql server 
 
+```
+mysql -u leke -p -h 52.56.36.200
+```
