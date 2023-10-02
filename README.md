@@ -1,4 +1,4 @@
-# Client-Server-Architecture
+# Client-Server-Architecture - ***Armstrong***
 ## Understanding Client-Server Architecture
 
 ### The client–server model is a distributed application structure that partitions tasks or workloads between the providers of a resource or service, called servers, and service requesters, called clients.
@@ -101,5 +101,16 @@ sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
 ```
 mysql -u leke -p -h 52.56.36.200
 ```
+```
+mysql -u root -h 127.0.0.1 -p -P 3306
+```
 
-![client to server error](<images/client to server error.png>)
+> type command
+
+```
+show tables:
+```
+
+![show tables](<images/show tables.png>)
+
+# Thank You
